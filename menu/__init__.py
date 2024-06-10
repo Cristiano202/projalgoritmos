@@ -14,8 +14,7 @@ def menu_adm():
     print('4-Remover filme')
     print('5 - lista de todos os ingreço vendido')
     print('6-buscar um ingreço vendido especifico ')
-    print('7-ver grafico de venda ')
-    print('8-Voltar a o menu principal')
+    print('7-Voltar a o menu principal')
 
 
 def menu_cliente():

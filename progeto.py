@@ -66,14 +66,9 @@ while (opmenu_pr != '0'):
                         else:
                             print('filme não em contrado')
                 elif (opadm == '7'):
-                    print('...')
-
-
-
-
-
-                elif (opadm == '8'):
                     break
+
+
                 else:
                     print('opção invalida')
         else:
