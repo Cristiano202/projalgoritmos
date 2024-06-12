@@ -7,7 +7,10 @@ from validacao import *
 
 usuarios = {'1234': ['cris', 1, '123456'], '1235': ['cristi', 2, '123456']}
 filmes = [{'nome': 'gato de botas 1', 'genero': 'M', 'sinopse': 'aventuras', 'capacidade': 4, 'valor': 2},
-          {'nome': 'moto queiro fantasma', 'genero': 'M', 'sinopse': 'motos', 'capacidade': 4, 'valor': 2}]
+          {'nome': 'moto queiro fantasma', 'genero': 'M', 'sinopse': 'motos', 'capacidade': 4, 'valor': 2},
+          {'nome': 'bruxa', 'genero': 'M', 'sinopse': 'feticeira', 'capacidade': 4, 'valor': 2},
+          {'nome': 'balei azul', 'genero': 'M', 'sinopse': 'oceano', 'capacidade': 4, 'valor': 2}
+          ]
 filmes_vendidos = []
 opmenu_pr = 99
 
@@ -53,14 +56,14 @@ while (opmenu_pr != '0'):
                 elif (opadm == '5'):
                     print('-----Filmes vendidos ---')
                     for filme_vendido in filmes_vendidos:
-                        print(f'Nome = {filme_vendido['nome']}\n - Quantidade de Ingressos = {filme_vendido['quantidade_ingressos']}')
+                        print(f'Nome = {filme_vendido["nome"]}\n - Quantidade de Ingressos = {filme_vendido["quantidade_ingressos"]}')
 
 
 
                 elif (opadm == '6'):
-                    nome_filme = input('qual filme vocer quer comprar')
+                    nome_filme = input('qual filme vocer quer buscar = ')
                     for filme_vendido in filmes_vendidos:
-                        if filme_vendido['nome'].lower() == nome_filme.lower():
+                        if filme_vendido['nome'].lower() in nome_filme.lower():
                             print(f'Filme encontrado: {filme_vendido['nome']}, Quantidade de Ingressos: {filme_vendido['quantidade_ingressos']}')
 
                         else:

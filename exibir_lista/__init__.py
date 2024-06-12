@@ -75,7 +75,8 @@ def compra_filme(filmes,filmes_vendidos):
             vendido = {'nome': encontrado['nome'], 'quantidade_ingressos': compra}
             filmes_vendidos.append(vendido)
 
-            # Registrar compra no arquivo de filmes vendidos
+
+
             with open('filmes_vendidos.txt', 'a') as arquivo_vendidos:
                 arquivo_vendidos.write(f"Filme: {vendido['nome']}, Quantidade de Ingressos: {compra}, Forma de Pagamento: {forma_pagamento}\n")
 
